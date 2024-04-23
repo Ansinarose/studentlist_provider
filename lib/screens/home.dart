@@ -8,7 +8,7 @@ import 'package:studentlist_provider/provider/provideDemo.dart';
 import 'package:studentlist_provider/screens/editpage.dart';
 import 'package:studentlist_provider/screens/searchScreen.dart';
 import 'package:studentlist_provider/screens/studentAdd.dart';
-import 'package:studentlist_provider/screens/thirdpage.dart';
+import 'package:studentlist_provider/screens/profile.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -17,12 +17,13 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     print("page rebuild");
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton(backgroundColor: Colors.lightBlue,
         onPressed: () {
           Navigator.of(context)
               .push(MaterialPageRoute(builder: (context) => StudentAdd()));
         },
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.add,
+        color: Colors.black,),
       ),
       appBar: AppBar(
         backgroundColor: Colors.lightBlue,

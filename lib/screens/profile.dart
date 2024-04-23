@@ -18,7 +18,7 @@ class detailspage extends StatelessWidget {
         orElse: () => student(name: '', age: '', country: ''));
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black12,
+        backgroundColor: Colors.lightBlue,
         centerTitle: true,
         title: Text('Details of ${stu.name}'),
       ),

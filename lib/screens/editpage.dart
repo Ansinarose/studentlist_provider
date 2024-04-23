@@ -51,23 +51,31 @@ class EditPage extends StatelessWidget {
                 SizedBox(
                   height: 35,
                 ),
-                custmtestfield(
-                  controller: nameController,
-                  keybordtype: TextInputType.name,
-                  labeltext: 'Name',
-                ),
                 Container(
-                  color: Colors.lightBlue[50],
+                  color: Colors.lightBlue,
+                  child: custmtestfield(
+                    controller: nameController,
+                    keybordtype: TextInputType.name,
+                    labeltext: 'Name',
+                  ),
+                ),
+                SizedBox(height: 20,),
+                Container(
+                  color: Colors.lightBlue,
                   child: custmtestfield(
                     controller: ageController,
                     keybordtype: TextInputType.number,
                     labeltext: 'Age',
                   ),
                 ),
-                custmtestfield(
-                  controller: countryController,
-                  keybordtype: TextInputType.name,
-                  labeltext: 'Country',
+                   SizedBox(height: 20,),
+                Container(
+                  color: Colors.lightBlue,
+                  child: custmtestfield(
+                    controller: countryController,
+                    keybordtype: TextInputType.name,
+                    labeltext: 'Country',
+                  ),
                 ),
                 SizedBox(
                   height: 30,

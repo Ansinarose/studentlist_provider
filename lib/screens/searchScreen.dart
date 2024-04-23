@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 
 import 'package:studentlist_provider/model/studentmodel.dart';
 import 'package:studentlist_provider/provider/provideDemo.dart';
-import 'package:studentlist_provider/screens/thirdpage.dart';
+import 'package:studentlist_provider/screens/profile.dart';
 
 class Searchscreen extends StatelessWidget {
   const Searchscreen({Key? key});
@@ -12,7 +12,9 @@ class Searchscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.lightBlue,
+      ),
       body: Column(
         children: [
           Padding(
@@ -24,8 +26,8 @@ class Searchscreen extends StatelessWidget {
               ),
               placeholder: 'Search...',
               placeholderStyle:
-                  const TextStyle(fontSize: 14), // Adjust font size
-              style: const TextStyle(fontSize: 16, color: Colors.white),
+                   TextStyle(fontSize: 14), // Adjust font size
+              style:  TextStyle(fontSize: 16, color: Colors.white),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.black,

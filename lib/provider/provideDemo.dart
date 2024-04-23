@@ -40,5 +40,5 @@ class ProviderDemo with ChangeNotifier {
     }
 
     notifyListeners();
-  }
+  }   
 }
